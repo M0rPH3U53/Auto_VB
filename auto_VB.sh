@@ -90,7 +90,7 @@ list_vm () {
 start_vm_no_gui () {
 
     read -p "Entrer le nom d'une VM: " VM
-    VBoxManage startvm "$VM" --type headless
+    VBoxManage startvm ${VM} --type headless
 
 }
 
@@ -98,14 +98,14 @@ start_vm_no_gui () {
 start_vm_gui () {
 
     read -p "Entrer le nom d'une VM: " VM
-    VBoxManage startvm "$VM" --type gui
+    VBoxManage startvm ${VM} --type gui
 
 }
 # Reboot la VM
 rebbot_no_gui () {
 
     read -p "Entrer le nom de la VM a redemarrer: " VM
-    VBoxManage controlvm "$VM" reset
+    VBoxManage controlvm ${VM} reset
 }
 
 
@@ -113,14 +113,14 @@ rebbot_no_gui () {
 vm_poweroff () {
 
     read -p "Entrer le nom de la VM a arreter: " VM
-    VBoxManage controlvm "$VM" poweroff
+    VBoxManage controlvm ${VM} poweroff
 }
 
 # Stopper la VM proprement
 vm_poweroff_os () {
 
     read -p "Entrer le nom de la VM a arreter: " VM
-    VBoxManage controlvm "$VM" acpipowerbutton
+    VBoxManage controlvm ${VM} acpipowerbutton
 
 }
 
