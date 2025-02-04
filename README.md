@@ -1,3 +1,3 @@
 # Auto_VB
 
-Gestion des VM Virtualbox en shell
+Gestion des VM Virtualbox en ligne de commande
