@@ -1,4 +1,4 @@
-# 🖥️ Gestionaire VB
+# 🖥️ Gestionaire VBox
 
 Gestion des VM Virtualbox en ligne de commande
 
