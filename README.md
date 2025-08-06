@@ -3,7 +3,7 @@
 Gestion des VM Virtualbox en ligne de commande
 
 
-# 👁️ Prévisualisation
+# 👁️ Demo
 
 ```
 =============================
