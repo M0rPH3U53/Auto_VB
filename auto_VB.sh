@@ -89,7 +89,7 @@ list_vm () {
 # Boot sans affichage
 start_vm_no_gui () {
 
-    read -p "Entrer le nom d'une VM: " VM
+    read -p "VM: " VM
     VBoxManage startvm ${VM} --type headless
 
 }
@@ -97,14 +97,14 @@ start_vm_no_gui () {
 # Boot avec Affichage
 start_vm_gui () {
 
-    read -p "Entrer le nom d'une VM: " VM
+    read -p "VM: " VM
     VBoxManage startvm ${VM} --type gui
 
 }
 # Reboot la VM
 rebbot_no_gui () {
 
-    read -p "Entrer le nom de la VM a redemarrer: " VM
+    read -p "VM: " VM
     VBoxManage controlvm ${VM} reset
 }
 
@@ -112,14 +112,14 @@ rebbot_no_gui () {
 # Stopper la VM 
 vm_poweroff () {
 
-    read -p "Entrer le nom de la VM a arreter: " VM
+    read -p "VM: " VM
     VBoxManage controlvm ${VM} poweroff
 }
 
 # Stopper la VM proprement
 vm_poweroff_os () {
 
-    read -p "Entrer le nom de la VM a arreter: " VM
+    read -p "VM: " VM
     VBoxManage controlvm ${VM} acpipowerbutton
 
 }
