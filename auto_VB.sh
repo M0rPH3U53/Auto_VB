@@ -72,7 +72,7 @@ vm_enable_menu () {
 vm_enable () {
 
     echo "============================="
-    VBoxManage list active vms
+    VBoxManage list runningvms
     echo "============================="
     
 }
